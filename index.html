@@ -137,9 +137,22 @@
       <a href="contact.html" class="nav-link">Store &amp; Showroom Contact</a>
     </div>
     <div class="mobile-drawer-footer">
-      <a href="bulk-pricing.html" class="btn btn-primary" style="width: 100%;">Get Contractor Pricing</a>
-      <div style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.5rem;">
-        Showroom Hotline: (800) 555-7586
+      <a href="bulk-pricing.html" class="btn btn-primary" style="width: 100%; justify-content: center; display: flex; align-items: center;">Request Quote</a>
+      <div class="mobile-drawer-actions" style="display: flex; justify-content: center; gap: 1rem; margin-top: 0.5rem;">
+        <button class="action-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <svg width="19" height="19" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+        <button class="action-btn rtl-toggle-btn" aria-label="Toggle RTL" title="Toggle RTL">
+          <span style="font-size: 0.75rem; font-weight: 800;">RTL</span>
+        </button>
+        <button class="action-btn rfq-cart-trigger" aria-label="View RFQ Quote Tray" title="RFQ Quote Cart">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+          </svg>
+          <span class="cart-badge" style="display: none;">0</span>
+        </button>
       </div>
     </div>
   </aside>
@@ -217,7 +230,7 @@
           <!-- Category 1 -->
           <a href="shop.html?category=Pipes+%26+Fittings" class="category-card">
             <div class="category-icon-wrap">
-              <img src="assets/images/categories/cat-pipes.svg" alt="Pipes and Fittings Icon" width="56" height="56">
+              <img src="assets/images/categories/cat-pipes.jpg" alt="Pipes and Fittings Icon" width="56" height="56">
             </div>
             <h3 class="category-title">Pipes &amp; Fittings</h3>
             <span class="category-count">1,420 Items</span>
@@ -227,7 +240,7 @@
           <!-- Category 2 -->
           <a href="shop.html?category=Taps+%26+Faucets" class="category-card">
             <div class="category-icon-wrap">
-              <img src="assets/images/categories/cat-faucets.svg" alt="Taps and Faucets Icon" width="56" height="56">
+              <img src="assets/images/categories/cat-faucets.jpg" alt="Taps and Faucets Icon" width="56" height="56">
             </div>
             <h3 class="category-title">Taps &amp; Faucets</h3>
             <span class="category-count">860 Items</span>
@@ -237,7 +250,7 @@
           <!-- Category 3 -->
           <a href="shop.html?category=Sanitary+Ware" class="category-card">
             <div class="category-icon-wrap">
-              <img src="assets/images/categories/cat-sanitary.svg" alt="Sanitary Ware Icon" width="56" height="56">
+              <img src="assets/images/categories/cat-sanitary.jpg" alt="Sanitary Ware Icon" width="56" height="56">
             </div>
             <h3 class="category-title">Sanitary Ware</h3>
             <span class="category-count">640 Items</span>
@@ -247,7 +260,7 @@
           <!-- Category 4 -->
           <a href="shop.html?category=Taps+%26+Faucets" class="category-card">
             <div class="category-icon-wrap">
-              <img src="assets/images/categories/cat-showers.svg" alt="Bathroom Accessories Icon" width="56" height="56">
+              <img src="assets/images/categories/cat-showers.jpg" alt="Bathroom Accessories Icon" width="56" height="56">
             </div>
             <h3 class="category-title">Showers &amp; Accessories</h3>
             <span class="category-count">520 Items</span>
@@ -257,7 +270,7 @@
           <!-- Category 5 -->
           <a href="shop.html?category=Valves" class="category-card">
             <div class="category-icon-wrap">
-              <img src="assets/images/categories/cat-valves.svg" alt="Industrial Valves Icon" width="56" height="56">
+              <img src="assets/images/categories/cat-valves.jpg" alt="Industrial Valves Icon" width="56" height="56">
             </div>
             <h3 class="category-title">Industrial Valves</h3>
             <span class="category-count">780 Items</span>
@@ -267,7 +280,7 @@
           <!-- Category 6 -->
           <a href="shop.html?category=Water+Storage" class="category-card">
             <div class="category-icon-wrap">
-              <img src="assets/images/categories/cat-storage.svg" alt="Water Storage Icon" width="56" height="56">
+              <img src="assets/images/categories/cat-storage.jpg" alt="Water Storage Icon" width="56" height="56">
             </div>
             <h3 class="category-title">Water Storage</h3>
             <span class="category-count">310 Items</span>
@@ -277,7 +290,7 @@
           <!-- Category 7 -->
           <a href="shop.html?category=Drainage" class="category-card">
             <div class="category-icon-wrap">
-              <img src="assets/images/categories/cat-drainage.svg" alt="Drainage Solutions Icon" width="56" height="56">
+              <img src="assets/images/categories/cat-drainage.jpg" alt="Drainage Solutions Icon" width="56" height="56">
             </div>
             <h3 class="category-title">Drainage &amp; Traps</h3>
             <span class="category-count">490 Items</span>
@@ -287,7 +300,7 @@
           <!-- Category 8 -->
           <a href="shop.html?category=Plumbing+Tools" class="category-card">
             <div class="category-icon-wrap">
-              <img src="assets/images/categories/cat-tools.svg" alt="Plumbing Tools Icon" width="56" height="56">
+              <img src="assets/images/categories/cat-tools.jpg" alt="Plumbing Tools Icon" width="56" height="56">
             </div>
             <h3 class="category-title">Plumbing Tools</h3>
             <span class="category-count">350 Items</span>
@@ -302,11 +315,11 @@
          ========================================================================= -->
     <section class="section" style="background: var(--bg-surface-alt);" id="home1-featured" aria-labelledby="featured-title">
       <div class="container">
-        <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+        <div class="section-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; max-width: 100%;">
           <div>
             <span class="section-tag">Tested &amp; Certified</span>
             <h2 id="featured-title" class="section-title">Featured Contractor Essentials</h2>
-            <p class="section-subtitle">Real-world specifications, genuine pressure ratings, and instant trade pricing.</p>
+            <p class="section-subtitle" style="margin-bottom: 0;">Real-world specifications, genuine pressure ratings, and instant trade pricing.</p>
           </div>
           <a href="shop.html" class="btn btn-outline">View Full Catalog →</a>
         </div>
@@ -316,7 +329,7 @@
           <article class="product-card">
             <div class="product-thumb">
               <span class="badge badge-blue product-badge-top">Valves</span>
-              <img src="assets/images/products/prod-angle-valve.svg" alt="Heavy-Duty Brass Angle Valve PN16" loading="lazy">
+              <img src="assets/images/products/prod-angle-valve.jpg" alt="Heavy-Duty Brass Angle Valve PN16" loading="lazy">
               <button class="btn btn-secondary btn-sm product-quick-btn quick-view-trigger" data-product-id="valve-01">Quick View</button>
             </div>
             <div class="product-info">
@@ -340,7 +353,7 @@
           <article class="product-card">
             <div class="product-thumb">
               <span class="badge badge-green product-badge-top">Piping</span>
-              <img src="assets/images/products/prod-cpvc-fittings.svg" alt="CPVC High-Pressure Tee and Elbow Fittings" loading="lazy">
+              <img src="assets/images/products/prod-cpvc-fittings.jpg" alt="CPVC High-Pressure Tee and Elbow Fittings" loading="lazy">
               <button class="btn btn-secondary btn-sm product-quick-btn quick-view-trigger" data-product-id="pipe-01">Quick View</button>
             </div>
             <div class="product-info">
@@ -364,7 +377,7 @@
           <article class="product-card">
             <div class="product-thumb">
               <span class="badge badge-amber product-badge-top">Faucets</span>
-              <img src="assets/images/products/prod-basin-mixer.svg" alt="Matte Graphite Ceramic Basin Mixer" loading="lazy">
+              <img src="assets/images/products/prod-basin-mixer.jpg" alt="Matte Graphite Ceramic Basin Mixer" loading="lazy">
               <button class="btn btn-secondary btn-sm product-quick-btn quick-view-trigger" data-product-id="tap-01">Quick View</button>
             </div>
             <div class="product-info">
@@ -388,7 +401,7 @@
           <article class="product-card">
             <div class="product-thumb">
               <span class="badge badge-blue product-badge-top">Sanitary</span>
-              <img src="assets/images/products/prod-rimless-wc.svg" alt="Wall-Hung Rimless Smart Ceramic WC" loading="lazy">
+              <img src="assets/images/products/prod-rimless-wc.jpg" alt="Wall-Hung Rimless Smart Ceramic WC" loading="lazy">
               <button class="btn btn-secondary btn-sm product-quick-btn quick-view-trigger" data-product-id="sanitary-01">Quick View</button>
             </div>
             <div class="product-info">
@@ -659,6 +672,28 @@
           <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
             AQUAPRO is the industry’s premier supplier of certified plumbing pipes, high-pressure industrial valves, brass fittings, and luxury architectural sanitary ware.
           </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="X (formerly Twitter)">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="YouTube">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 00-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 002.11 2.11c1.871.508 9.388.508 9.388.508s7.517 0 9.388-.508a3.002 3.002 0 002.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </div>
           <div style="margin-top: 1.25rem; font-size: 0.85rem; color: #cbd5e1;">
             📍 450 Industrial Parkway, Central District<br>
             🕒 Mon - Fri: 7:00 AM – 6:00 PM | Sat: 8:00 AM – 4:00 PM
@@ -725,7 +760,7 @@
       <button class="modal-close-btn" aria-label="Close Modal">✕</button>
       <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 2rem; padding: 2.5rem;">
         <div style="background: var(--bg-surface-subtle); border-radius: var(--radius-md); padding: 1.5rem; display: flex; align-items: center; justify-content: center;">
-          <img id="qvImage" src="assets/images/products/prod-angle-valve.svg" alt="Product Image" style="max-height: 260px; object-fit: contain;">
+          <img id="qvImage" src="assets/images/products/prod-angle-valve.jpg" alt="Product Image" style="max-height: 260px; object-fit: contain;">
         </div>
         <div>
           <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
@@ -736,7 +771,7 @@
           <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">
             Brand: <strong id="qvBrand" style="color: var(--text-primary);">Watts</strong> | SKU: <span id="qvSku" class="mono">WTT-AV-16</span>
           </div>
-          <div style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary); margin-bottom: 1rem;" id="qvPrice">$18.50</div>
+          <div style="font-size: 1.5rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1rem;" id="qvPrice">$18.50</div>
           <p id="qvDescription" style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.5;">
             Product specification details.
           </p>

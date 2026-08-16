@@ -28,7 +28,7 @@
       material: 'DZR Brass',
       rating: 'PN16 / 232 PSI',
       inStock: true,
-      image: 'assets/images/products/prod-angle-valve.svg',
+      image: 'assets/images/products/prod-angle-valve.jpg',
       description: 'Corrosion-resistant DZR brass body with chrome finish and 1/4 turn ceramic disc cartridge. Ideal for geyser, basin, and WC inlet lines.'
     },
     {
@@ -42,7 +42,7 @@
       material: 'Chlorinated PVC',
       rating: 'SDR 11 / Class 1',
       inStock: true,
-      image: 'assets/images/products/prod-cpvc-fittings.svg',
+      image: 'assets/images/products/prod-cpvc-fittings.jpg',
       description: 'Engineered for high-temperature hot & cold potable water distribution. ASTM F441 compliant with superior tensile strength.'
     },
     {
@@ -56,7 +56,7 @@
       material: 'Solid Brass / PVD',
       rating: 'WELS 5-Star',
       inStock: true,
-      image: 'assets/images/products/prod-basin-mixer.svg',
+      image: 'assets/images/products/prod-basin-mixer.jpg',
       description: 'Architectural single-lever basin mixer with SilkMove 35mm ceramic cartridge and scratch-resistant matte graphite PVD coating.'
     },
     {
@@ -70,7 +70,7 @@
       material: 'Brushed Bronze',
       rating: '38°C Safety Stop',
       inStock: true,
-      image: 'assets/images/products/prod-shower-system.svg',
+      image: 'assets/images/products/prod-shower-system.jpg',
       description: 'Dual-outlet thermostatic shower system with 300mm ultra-slim stainless steel rainhead, anti-scald technology and hand shower.'
     },
     {
@@ -84,7 +84,7 @@
       material: 'Vitreous China',
       rating: 'Dual Flush 4.5/3L',
       inStock: true,
-      image: 'assets/images/products/prod-rimless-wc.svg',
+      image: 'assets/images/products/prod-rimless-wc.jpg',
       description: 'Hygienic rimless ceramic pan with quick-release soft-close UF seat cover. Compatible with standard concealed cistern frames.'
     },
     {
@@ -98,7 +98,7 @@
       material: 'AISI 304 Stainless',
       rating: 'DN50 High Flow',
       inStock: true,
-      image: 'assets/images/products/prod-linear-drain.svg',
+      image: 'assets/images/products/prod-linear-drain.jpg',
       description: 'Reversible 2-in-1 tile-in drain channel with anti-odor siphon trap and hair catcher basket for luxury wetroom walk-in showers.'
     },
     {
@@ -112,7 +112,7 @@
       material: 'Virgin Food-Grade HDPE',
       rating: '2,000 Liters Capacity',
       inStock: true,
-      image: 'assets/images/products/prod-water-tank.svg',
+      image: 'assets/images/products/prod-water-tank.jpg',
       description: 'Multi-layer UV-stabilized heavy duty water tank with silver-nano anti-microbial inner barrier preventing algae growth.'
     },
     {
@@ -126,7 +126,7 @@
       material: 'Forged Brass & Steel',
       rating: 'PN25 / 360 PSI',
       inStock: true,
-      image: 'assets/images/products/prod-ball-valve.svg',
+      image: 'assets/images/products/prod-ball-valve.jpg',
       description: 'Heavy commercial quarter-turn ball valve for water, air, and neutral fluids. PTFE seats and blowout-proof stem.'
     },
     {
@@ -140,7 +140,7 @@
       material: 'PPR + Aluminum Foil',
       rating: 'PN20 / DIN 8077',
       inStock: true,
-      image: 'assets/images/products/prod-ppr-pipe.svg',
+      image: 'assets/images/products/prod-ppr-pipe.jpg',
       description: 'Oxygen-barrier composite pipe with negligible thermal expansion. Ideal for high-pressure concealed central heating and cooling.'
     },
     {
@@ -154,7 +154,7 @@
       material: 'Alloy Aluminum Body',
       rating: 'Up to 2.5" Pipe Cap',
       inStock: true,
-      image: 'assets/images/products/prod-pipe-wrench.svg',
+      image: 'assets/images/products/prod-pipe-wrench.jpg',
       description: 'Professional contractor wrench offering 40% lighter weight than cast-iron with hardened alloy steel floating hook jaws.'
     },
     {
@@ -168,7 +168,7 @@
       material: '316 SS + EPDM Core',
       rating: '1/2" BSP Female x 500mm',
       inStock: true,
-      image: 'assets/images/products/prod-flexible-hose.svg',
+      image: 'assets/images/products/prod-flexible-hose.jpg',
       description: 'High-burst-pressure flexible supply line with brass hex nuts and captive silicone seals for water heaters and sanitary monoblocs.'
     },
     {
@@ -182,7 +182,7 @@
       material: 'Cast Iron & 304 SS',
       rating: '1.5 HP / 350 L/min',
       inStock: true,
-      image: 'assets/images/products/prod-submersible-pump.svg',
+      image: 'assets/images/products/prod-submersible-pump.jpg',
       description: 'Heavy duty sump pump with integrated automatic float switch, thermal overload motor protection, and non-clog vortex impeller.'
     }
   ];
@@ -204,7 +204,39 @@
     initBrandFilter();
     initCountdown();
     updateRfqBadge();
+    initScrollToTop();
   });
+
+  // ==========================================================================
+  // Scroll To Top Button
+  // ==========================================================================
+  function initScrollToTop() {
+    const btn = document.createElement('button');
+    btn.id = 'scrollToTopBtn';
+    btn.className = 'scroll-to-top-btn';
+    btn.setAttribute('aria-label', 'Scroll to top');
+    btn.innerHTML = `
+      <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+      </svg>
+    `;
+    document.body.appendChild(btn);
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    });
+
+    btn.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
 
   // ==========================================================================
   // Theme Toggle (Dark / Light)
@@ -750,7 +782,7 @@
               <span class="badge badge-amber">Custom MEP Bill of Materials</span>
               <button class="btn btn-primary btn-sm add-to-rfq-btn" onclick="alert('All 5 core package items added to your RFQ Quote tray!')">Add All to Quote</button>
             </div>
-            <h3 style="margin-bottom: 0.5rem; color: var(--color-primary);">${data.title}</h3>
+            <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">${data.title}</h3>
             <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">${data.desc}</p>
             <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.75rem;">
               ${data.items.map(item => `

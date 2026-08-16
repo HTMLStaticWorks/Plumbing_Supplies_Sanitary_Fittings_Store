@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="100%" height="100%">
-  <text x="100" y="46" font-family="sans-serif" font-size="28" font-weight="900" letter-spacing="4" fill="#1e293b" text-anchor="middle">WATTS</text>
-  <line x1="40" y1="56" x2="160" y2="56" stroke="#0284c7" stroke-width="3"/>
+  <!-- WATTS in bold serif -->
+  <text x="100" y="47" font-family="'Georgia', 'Times New Roman', serif" font-size="34" font-weight="900" letter-spacing="1" fill="#004B87" text-anchor="middle">WATTS</text>
+  <!-- Red stripe -->
+  <rect x="35" y="55" width="130" height="4" fill="#E31B23" />
 </svg>

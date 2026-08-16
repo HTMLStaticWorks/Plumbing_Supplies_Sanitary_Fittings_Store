@@ -1,3 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="100%" height="100%">
-  <text x="100" y="48" font-family="sans-serif" font-size="26" font-weight="700" letter-spacing="3" fill="#0f172a" text-anchor="middle">Jaquar</text>
+  <!-- Teal and Orange leaf/swoosh logo mark -->
+  <g transform="translate(18, 24)">
+    <!-- Teal leaf -->
+    <path d="M 5 24 C 5 8, 22 8, 28 16 C 18 24, 10 24, 5 24 Z" fill="#008080" />
+    <!-- Orange swoosh -->
+    <path d="M 11 27 C 16 19, 28 19, 31 24 C 23 28, 15 29, 11 27 Z" fill="#FF6F00" />
+  </g>
+  <!-- jaquar text -->
+  <text x="122" y="48" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="800" fill="#1E293B" text-anchor="middle">jaquar</text>
 </svg>

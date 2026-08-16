@@ -35,13 +35,22 @@
 }
 
 [data-theme="dark"] .brand-card {
-  background: #131d31;
+  background: var(--bg-surface-subtle);
+  filter: none;
+}
+
+[data-theme="dark"] .brand-card img, 
+[data-theme="dark"] .brand-card svg {
   filter: grayscale(100%) invert(0.85);
 }
 
 [data-theme="dark"] .brand-card:hover {
-  filter: grayscale(0%) invert(0);
-  background: #1e293b;
+  background: var(--bg-surface-elevated);
+}
+
+[data-theme="dark"] .brand-card:hover img,
+[data-theme="dark"] .brand-card:hover svg {
+  filter: grayscale(0%) invert(1);
 }
 
 [data-theme="dark"] .product-thumb {
