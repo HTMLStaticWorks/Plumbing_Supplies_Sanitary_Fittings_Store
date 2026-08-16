@@ -1,0 +1,99 @@
+/* ==========================================================================
+   AQUAPRO Plumbing Supplies - RTL (Right-to-Left) Stylesheet
+   ========================================================================== */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] body {
+  font-family: 'Segoe UI', Tahoma, 'Arial', sans-serif;
+}
+
+[dir="rtl"] .top-bar-left,
+[dir="rtl"] .top-bar-right,
+[dir="rtl"] .header-actions,
+[dir="rtl"] .main-nav {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .action-btn .cart-badge {
+  right: auto;
+  left: -4px;
+}
+
+[dir="rtl"] .hero-floating-badge {
+  left: auto;
+  right: 1.5rem;
+}
+
+[dir="rtl"] .product-badge-top {
+  left: auto;
+  right: 1rem;
+}
+
+[dir="rtl"] .modal-close-btn {
+  right: auto;
+  left: 1.25rem;
+}
+
+[dir="rtl"] .mobile-nav-drawer {
+  right: auto;
+  left: -320px;
+  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.15);
+  transition: left var(--transition-smooth);
+}
+
+[dir="rtl"] .mobile-nav-drawer.active {
+  left: 0;
+  right: auto;
+}
+
+[dir="rtl"] .rfq-drawer {
+  right: auto;
+  left: -420px;
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15);
+  transition: left var(--transition-smooth);
+}
+
+[dir="rtl"] .rfq-drawer.active {
+  left: 0;
+  right: auto;
+}
+
+[dir="rtl"] .toast-container {
+  right: auto;
+  left: 2rem;
+}
+
+[dir="rtl"] .filter-checkbox input {
+  margin-right: 0;
+  margin-left: 0.6rem;
+}
+
+[dir="rtl"] .detail-spec-table th,
+[dir="rtl"] .detail-spec-table td {
+  text-align: right;
+}
+
+[dir="rtl"] .tier-item {
+  border-left: none;
+  border-right: 3px solid #38bdf8;
+}
+
+[dir="rtl"] .tier-item.vip {
+  border-left: none;
+  border-right: 3px solid #f59e0b;
+}
+
+[dir="rtl"] .footer-links a:hover {
+  padding-left: 0;
+  padding-right: 4px;
+}
+
+/* Flip directional arrows */
+[dir="rtl"] .icon-arrow-right,
+[dir="rtl"] svg[data-icon="arrow-right"] {
+  transform: scaleX(-1);
+}

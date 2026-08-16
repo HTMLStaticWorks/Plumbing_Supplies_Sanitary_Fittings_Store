@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="steel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="50%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="#f8fafc" rx="16"/>
+  <circle cx="200" cy="200" r="140" fill="#ffffff" opacity="0.8"/>
+  <!-- Wrench Handle Red Cast Iron -->
+  <path d="M120 280 L230 170 L255 190 L145 300 Z" fill="#dc2626" stroke="#991b1b" stroke-width="3"/>
+  <circle cx="132" cy="290" r="8" fill="#ffffff"/>
+  <!-- Jaws -->
+  <path d="M220 180 L260 140 L290 140 L280 180 Z" fill="url(#steel)" stroke="#1e293b" stroke-width="2"/>
+  <path d="M250 130 L270 90 L310 90 L300 130 Z" fill="url(#steel)" stroke="#1e293b" stroke-width="2"/>
+  <!-- Knurled Nut -->
+  <circle cx="250" cy="155" r="12" fill="#f59e0b"/>
+  <rect x="24" y="24" width="100" height="26" rx="6" fill="#dc2626" fill-opacity="0.1"/>
+  <text x="74" y="41" fill="#dc2626" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="middle">18" PRO STEEL</text>
+</svg>

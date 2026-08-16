@@ -1,0 +1,128 @@
+/* ==========================================================================
+   AQUAPRO Plumbing Supplies - Dark Mode Theme Overrides
+   ========================================================================== */
+
+[data-theme="dark"] {
+  --bg-body: #090d16;
+  --bg-surface: #0f172a;
+  --bg-surface-elevated: #1e293b;
+  --bg-surface-subtle: #1e293b;
+  --bg-surface-alt: #0b1322;
+  --bg-overlay: rgba(5, 8, 15, 0.85);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-inverse: #0f172a;
+
+  --border-color: #334155;
+  --border-subtle: #1e293b;
+  --border-focus: #38bdf8;
+
+  --color-accent-light: rgba(2, 132, 199, 0.2);
+  --color-secondary-light: rgba(217, 119, 6, 0.2);
+  --color-success-light: rgba(22, 163, 74, 0.2);
+  --color-danger-light: rgba(220, 38, 38, 0.2);
+
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.35);
+  --shadow-card-hover: 0 12px 30px rgba(0, 0, 0, 0.55);
+}
+
+[data-theme="dark"] .site-header {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .brand-card {
+  background: #131d31;
+  filter: grayscale(100%) invert(0.85);
+}
+
+[data-theme="dark"] .brand-card:hover {
+  filter: grayscale(0%) invert(0);
+  background: #1e293b;
+}
+
+[data-theme="dark"] .product-thumb {
+  background: #141e33;
+}
+
+[data-theme="dark"] .spec-pill {
+  background: #1e293b;
+  border-color: #334155;
+  color: #93c5fd;
+}
+
+[data-theme="dark"] .detail-spec-table th {
+  background: #1e293b;
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .category-icon-wrap {
+  background: #1e293b;
+}
+
+[data-theme="dark"] .hero-home2 {
+  background: #090d16;
+  border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .search-bar-hero {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .cta-card-white {
+  background: #0f172a;
+  color: #f8fafc;
+  border: 1px solid #334155;
+}
+
+[data-theme="dark"] .cta-card-white h4 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .cta-card-white p {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .form-control {
+  background: #131d31;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .form-control:focus {
+  border-color: #38bdf8;
+  background: #1e293b;
+}
+
+[data-theme="dark"] .filter-sidebar {
+  background: #0f172a;
+}
+
+[data-theme="dark"] .shop-top-bar {
+  background: #0f172a;
+}
+
+[data-theme="dark"] .modal-dialog,
+[data-theme="dark"] .rfq-drawer,
+[data-theme="dark"] .mobile-nav-drawer {
+  background: #0f172a;
+  border: 1px solid #334155;
+}
+
+[data-theme="dark"] .rfq-footer {
+  background: #131d31;
+}
+
+[data-theme="dark"] .quantity-stepper {
+  background: #131d31;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .stepper-btn {
+  background: #1e293b;
+  color: #f8fafc;
+}
