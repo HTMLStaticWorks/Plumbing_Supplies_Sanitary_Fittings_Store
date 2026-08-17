@@ -12,22 +12,16 @@
   <link rel="stylesheet" href="assets/css/dark-mode.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <style>
+    @media (min-width: 1025px) {
+      .brand-directory-center {
+        grid-column-start: 2;
+      }
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="container">
-      <div class="top-bar-left">
-        <span>📍 100% Factory Authorized Direct Distributor with Full OEM Warranties</span>
-      </div>
-      <div class="top-bar-right">
-        <a href="bulk-pricing.html">🏢 Commercial Contractor Accounts</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Header -->
+<!-- Header -->
   <header class="site-header" id="siteHeader">
     <div class="container">
       <div class="header-inner">
@@ -83,7 +77,16 @@
   <!-- Mobile Drawer -->
   <aside class="mobile-nav-drawer" id="mobileNavDrawer">
     <div class="drawer-header">
-      <div class="brand-logo"><span class="logo-name">AQUA<span>PRO</span></span></div>
+      <a href="index.html" class="brand-logo" aria-label="AQUAPRO Homepage">
+        <div class="logo-icon">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">AQUA<span>PRO</span></span>
+        </div>
+      </a>
       <button class="drawer-close-btn">✕</button>
     </div>
     <div class="mobile-nav-links">
@@ -208,7 +211,7 @@
             <span style="font-size: 0.75rem; color: var(--text-muted);">Smart Washlets &amp; Clean Ceramics</span>
           </div>
 
-          <div class="brand-card brand-directory-item" data-brand-name="VIEGA" style="height: 140px; flex-direction: column; text-align: center; gap: 0.5rem;">
+          <div class="brand-card brand-directory-item brand-directory-center" data-brand-name="VIEGA" style="height: 140px; flex-direction: column; text-align: center; gap: 0.5rem;">
             <img src="assets/images/brands/brand-viega.svg" alt="Viega">
             <span style="font-size: 0.75rem; color: var(--text-muted);">Press Fittings &amp; Drainage Siphons</span>
           </div>
@@ -235,7 +238,7 @@
         <div class="grid grid-3">
           <div style="display: flex; flex-direction: column; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-card); height: 100%;">
             <div style="height: 48px; margin-bottom: 1.25rem;"><img src="assets/images/brands/brand-grohe.svg" alt="Grohe" style="max-height: 40px;"></div>
-            <h4 style="margin-bottom: 0.5rem;">German Engineering &amp; PVD Brassware</h4>
+            <h4 style="margin-bottom: 0.5rem; min-height: 3rem;">German Engineering &amp; PVD Brassware</h4>
             <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.25rem; flex-grow: 1;">
               Featuring SilkMove ceramic disc cartridges, EcoJoy flow limiters, and scratch-resistant Hard Graphite finishes with 15-year warranties.
             </p>
@@ -244,7 +247,7 @@
 
           <div style="display: flex; flex-direction: column; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-card); height: 100%;">
             <div style="height: 48px; margin-bottom: 1.25rem;"><img src="assets/images/brands/brand-astral.svg" alt="Astral" style="max-height: 40px;"></div>
-            <h4 style="margin-bottom: 0.5rem;">High-Pressure CPVC &amp; PPR Infrastructure</h4>
+            <h4 style="margin-bottom: 0.5rem; min-height: 3rem;">High-Pressure CPVC &amp; PPR Infrastructure</h4>
             <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.25rem; flex-grow: 1;">
               Certified ASTM F441 CPVC SDR 11 pipe systems with solvent weld joinery rated up to 93°C for residential and industrial hot water.
             </p>
@@ -253,7 +256,7 @@
 
           <div style="display: flex; flex-direction: column; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-card); height: 100%;">
             <div style="height: 48px; margin-bottom: 1.25rem;"><img src="assets/images/brands/brand-watts.svg" alt="Watts" style="max-height: 40px;"></div>
-            <h4 style="margin-bottom: 0.5rem;">Commercial Backflow &amp; Pressure Control</h4>
+            <h4 style="margin-bottom: 0.5rem; min-height: 3rem;">Commercial Backflow &amp; Pressure Control</h4>
             <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.25rem; flex-grow: 1;">
               ASME and WRAS certified pressure reducing valves (PRVs), DZR brass angle stops, and commercial dual-check backflow assemblies.
             </p>
@@ -327,14 +330,17 @@
       <div class="footer-grid">
         <!-- Col 1 -->
         <div class="footer-col">
-          <div class="brand-logo" style="margin-bottom: 1.25rem;">
-            <div class="logo-icon" style="background: rgba(255,255,255,0.1);">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1.25rem;">
+            <div class="logo-icon">
               <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
               </svg>
             </div>
-            <span class="logo-name" style="color: #ffffff;">AQUA<span style="color: #38bdf8;">PRO</span></span>
-          </div>
+            <div class="logo-text">
+              <span class="logo-name">AQUA<span>PRO</span></span>
+              <span class="logo-tagline">Plumbing &amp; Sanitary</span>
+            </div>
+          </a>
           <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
             AQUAPRO is the industry’s premier supplier of certified plumbing pipes, high-pressure industrial valves, brass fittings, and luxury architectural sanitary ware.
           </p>

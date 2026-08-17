@@ -251,7 +251,6 @@
         STORE.theme = STORE.theme === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', STORE.theme);
         localStorage.setItem('aquapro_theme', STORE.theme);
-        showToast(`Switched to ${STORE.theme.toUpperCase()} theme`);
       });
     });
   }
@@ -268,7 +267,6 @@
         STORE.dir = STORE.dir === 'rtl' ? 'ltr' : 'rtl';
         document.documentElement.setAttribute('dir', STORE.dir);
         localStorage.setItem('aquapro_dir', STORE.dir);
-        showToast(`Layout switched to ${STORE.dir.toUpperCase()}`);
       });
     });
   }
@@ -786,8 +784,8 @@
             <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">${data.desc}</p>
             <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.75rem;">
               ${data.items.map(item => `
-                <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.9rem; font-weight: 600;">
-                  <span style="color: var(--color-success); font-weight: bold;">✓</span> ${item}
+                <li style="display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.9rem; font-weight: 600;">
+                  <span style="color: var(--color-success); font-weight: bold; margin-top: 1px;">✓</span> ${item}
                 </li>
               `).join('')}
             </ul>
