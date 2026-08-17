@@ -1942,7 +1942,7 @@ p:last-child {
   }
 
   .grid-2, .grid-3, .grid-4, .grid-5, .grid-6 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .hero-stats {
@@ -2251,5 +2251,54 @@ p:last-child {
   .contact-map-info-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #shop-bulk-cta .container > div {
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  
+  #cat-highlights-section .grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  #cat-highlights-section .grid > div {
+    grid-column: span 1 !important;
+    max-width: 100% !important;
+  }
+  
+  #brandDirectoryList,
+  #brands-featured-collections .grid,
+  #about-quality-commitment .grid,
+  #about-trust .grid,
+  #contact-info-cards .grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  #brandDirectoryList > div,
+  #brands-featured-collections .grid > div,
+  #about-quality-commitment .grid > div,
+  #about-trust .grid > div,
+  #contact-info-cards .grid > div {
+    grid-column: span 1 !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 640px) {
+  #shop-enquiry-cta div[style*="display: flex"] {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+  #shop-enquiry-cta .btn {
+    width: 100% !important;
+    text-align: center;
+    white-space: normal !important;
+    padding: 1.15rem 1rem !important;
+    height: auto !important;
+    font-size: 0.95rem !important;
   }
 }
