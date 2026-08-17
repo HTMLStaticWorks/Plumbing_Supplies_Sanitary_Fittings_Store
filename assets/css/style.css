@@ -2178,11 +2178,14 @@ p:last-child {
     width: 100%;
   }
 
-  /* Force home page gold badge to display in single line on mobile view */
+  /* Center home page gold badge and allow wrapping to prevent horizontal overflow on small screens */
   .hero-home1 .section-tag.gold {
-    white-space: nowrap !important;
-    font-size: clamp(0.6rem, 3.2vw, 0.8125rem) !important;
-    padding: 0.35rem clamp(0.4rem, 2vw, 0.85rem) !important;
+    white-space: normal !important;
+    font-size: clamp(0.65rem, 3.2vw, 0.8125rem) !important;
+    padding: 0.35rem clamp(0.6rem, 2.5vw, 0.85rem) !important;
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 
   /* On mobile views, stack the label and value vertically for clean alignment and wrap prevention */
@@ -2346,25 +2349,46 @@ p:last-child {
     max-width: 100% !important;
   }
   
-  #brandDirectoryList,
-  #brands-featured-collections .grid,
   #about-quality-commitment .grid,
   #about-trust .grid,
   #contact-info-cards .grid {
     grid-template-columns: 1fr !important;
   }
   
-  #brandDirectoryList > div,
-  #brands-featured-collections .grid > div,
   #about-quality-commitment .grid > div,
   #about-trust .grid > div,
   #contact-info-cards .grid > div {
     grid-column: span 1 !important;
     max-width: 100% !important;
   }
+
+  /* Brand showcases 2-column grid with last card centered on tablet/1024 views */
+  #brands-featured-collections .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  #brands-featured-collections .grid > div {
+    grid-column: span 1 !important;
+    max-width: 100% !important;
+  }
+  #brands-featured-collections .grid > div:last-child {
+    grid-column: span 2 !important;
+    justify-self: center !important;
+    width: 100% !important;
+    max-width: 480px !important;
+  }
 }
 
 @media (max-width: 640px) {
+  /* Stack brand showcases vertically on mobile views */
+  #brands-featured-collections .grid {
+    grid-template-columns: 1fr !important;
+  }
+  #brands-featured-collections .grid > div,
+  #brands-featured-collections .grid > div:last-child {
+    grid-column: span 1 !important;
+    max-width: 100% !important;
+  }
+
   #shop-enquiry-cta div[style*="display: flex"] {
     flex-direction: column !important;
     gap: 0.75rem !important;
