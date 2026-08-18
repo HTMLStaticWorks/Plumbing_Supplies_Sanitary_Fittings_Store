@@ -103,10 +103,10 @@
       </a>
       <button class="drawer-close-btn">✕</button>
     </div>
-    <div class="mobile-nav-links">
-      <a href="index.html" class="nav-link">Home 1</a>
+        <div class="mobile-nav-links">
+      <a href="index.html" class="nav-link">Home</a>
       <a href="index-2.html" class="nav-link">Home 2</a>
-      <a href="shop.html" class="nav-link">Shop / Catalog</a>
+      <a href="shop.html" class="nav-link">Shop</a>
       <a href="categories.html" class="nav-link">Categories</a>
       <a href="brands.html" class="nav-link">Brands</a>
       <a href="bulk-pricing.html" class="nav-link">Bulk Pricing</a>
@@ -255,7 +255,7 @@
          ========================================================================= -->
     <section class="section" style="background: var(--bg-surface-alt);" id="contact-form-section">
       <div class="container">
-        <div style="max-width: 780px; margin: 0 auto; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 3.5rem; box-shadow: var(--shadow-xl);">
+        <div style="max-width: 780px; margin: 0 auto; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: clamp(1.5rem, 5vw, 3.5rem); box-shadow: var(--shadow-xl);">
           <div style="text-align: center; margin-bottom: 2.5rem;">
             <span class="section-tag">Direct Inquiry</span>
             <h2 style="margin-bottom: 0.5rem;">Send Us a Message</h2>
@@ -346,7 +346,7 @@
             <p style="color: #cbd5e1; font-size: 0.85rem; margin-bottom: 1.25rem; line-height: 1.5;">
               450 Industrial Parkway, Exit 14B off Interstate 80.<br>GPS: 37.7749° N, 122.4194° W
             </p>
-            <div style="display: flex; gap: 0.75rem;">
+            <div class="contact-map-buttons">
               <a href="https://maps.google.com/maps?daddr=37.7749,-122.4194" target="_blank" class="btn btn-gold btn-sm" style="text-decoration: none;">Get Directions</a>
               <button class="btn btn-outline-white btn-sm" onclick="alert('Warehouse loading bay: Gate 3 & 4 (Flatbed trucks)')">Loading Bay Info</button>
             </div>

@@ -608,6 +608,7 @@ p:last-child {
   font-size: 1.1rem;
   padding: 0.75rem 0;
   border-bottom: 1px solid var(--border-subtle);
+  text-align: center;
 }
 
 .mobile-drawer-footer {
@@ -1953,13 +1954,13 @@ p:last-child {
     text-align: center;
   }
   #home2-bulk-buying .grid-2 > div:first-child > div[style*="display: flex"] {
-    align-items: center;
+    align-items: stretch;
     width: 100%;
   }
   #home2-bulk-buying .grid-2 > div:first-child > div[style*="display: flex"] > div[style*="display: flex"] {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: start;
   }
 
   .cta-section-box > div:first-child {
@@ -2402,3 +2403,60 @@ p:last-child {
     font-size: 0.95rem !important;
   }
 }
+
+/* ==========================================================================
+   Home 2 Page Mobile & Tablet Layout Adjustments (1-Column Cards)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Ensure all content/product card grids stack 1 by 1 vertically */
+  #home2-product-types .grid,
+  #home2-popular-collection .grid,
+  #home2-bulk-buying .grid,
+  #home2-quality-promise .grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Reset grid child spanning and max widths for 1-column layouts */
+  #home2-product-types .grid > *,
+  #home2-popular-collection .grid > *,
+  #home2-bulk-buying .grid > *,
+  #home2-quality-promise .grid > * {
+    grid-column: span 1 !important;
+    justify-self: stretch !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Stack the hero floating spec cards 1 by 1 */
+  .hero-home2-cards {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  .floating-spec-card.highlighted {
+    grid-column: span 1 !important;
+  }
+  
+  /* Center items inside highlights on mobile */
+  .floating-spec-card.highlighted > div[style*="display: flex"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  /* Contact page floating panel buttons stacking */
+  .contact-map-buttons {
+    flex-direction: column !important;
+  }
+  .contact-map-buttons .btn {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+.contact-map-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
